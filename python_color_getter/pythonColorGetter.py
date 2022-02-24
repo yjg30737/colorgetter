@@ -33,9 +33,9 @@ class PythonColorGetter:
         return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
 
     @staticmethod
-    def lighter(r: int, g: int, b: int):
-        return min(255, r+17), min(255, g+17), min(255, b+17)
+    def lighter(r: int, g: int, b: int) -> tuple:
+        return tuple(map(lambda x: min(255, x+17), (r, g, b)))
 
     @staticmethod
-    def darker(r: int, g: int, b: int):
-        return max(0, r-17), max(0, g-17), max(0, b-17)
+    def darker(r: int, g: int, b: int) -> tuple:
+        return tuple(map(lambda x: max(0, x-17), (r, g, b)))
