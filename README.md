@@ -8,6 +8,8 @@ Color getter (including method to get random color or complementary color) made 
 * ```get_random_color() -> tuple```
 * ```get_color_from_stylesheet(code: str) -> None```
 * ```get_complementary_color(r: int, g: int, b: int) -> tuple```
+* ```rgb_to_hex(r: int, g: int, b: int) -> str```
+* ```hex_to_rgb(hex: str) -> tuple```
 
 ## Example
 Code Sample
