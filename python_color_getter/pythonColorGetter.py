@@ -28,6 +28,6 @@ class PythonColorGetter:
         return '#%02x%02x%02x' % (r, g, b)
 
     @staticmethod
-    def hex_to_rgb(rgb: str) -> tuple:
-        rgb = rgb[1:]
-        return tuple(int(rgb[i:i+2], 16) for i in (0, 2, 4))
+    def hex_to_rgb(h: str) -> tuple:
+        h = h[1:]
+        return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
