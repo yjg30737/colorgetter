@@ -16,10 +16,14 @@ Code Sample
 ```python
 print(PythonColorGetter.get_random_color())
 print(PythonColorGetter.get_complementary_color(255, 0, 0))
+print(PythonColorGetter.hex_to_rgb('#2c2c2c'))
+print(PythonColorGetter.rgb_to_hex(44, 44, 44))
 ```
 
 Result
 ```
 (211, 195, 123)
 (0, 255, 255)
+(44, 44, 44)
+#2c2c2c
 ```
