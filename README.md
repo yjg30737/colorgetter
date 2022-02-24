@@ -10,6 +10,8 @@ Color getter (including method to get random color or complementary color) made 
 * ```get_complementary_color(r: int, g: int, b: int) -> tuple```
 * ```rgb_to_hex(r: int, g: int, b: int) -> str```
 * ```hex_to_rgb(hex: str) -> tuple```
+* ```lighter(r: int, g: int, b: int) -> tuple```
+* ```darker(r: int, g: int, b: int) -> tuple```
 
 ## Example
 Code Sample
