@@ -19,7 +19,12 @@ Code Sample
 print(PythonColorGetter.get_random_color())
 print(PythonColorGetter.get_complementary_color(255, 0, 0))
 print(PythonColorGetter.hex_to_rgb('#2c2c2c'))
-print(PythonColorGetter.rgb_to_hex(44, 44, 44))
+r, g, b = 44, 44, 44
+print(PythonColorGetter.rgb_to_hex(r, g, b))
+light_r, light_g, light_b = PythonColorGetter.lighter(r, g, b)
+print(PythonColorGetter.rgb_to_hex(light_r, light_g, light_b))
+dark_r, dark_g, dark_b = PythonColorGetter.darker(r, g, b)
+print(PythonColorGetter.rgb_to_hex(dark_r, dark_g, dark_b))
 ```
 
 Result
@@ -28,4 +33,6 @@ Result
 (0, 255, 255)
 (44, 44, 44)
 #2c2c2c
+#3d3d3d
+#1b1b1b
 ```
