@@ -24,8 +24,13 @@ class PythonColorGetter:
         return r, g, b
 
     @staticmethod
-    def rgb_to_hex(r: int, g: int, b: int) -> str:
-        return '#%02x%02x%02x' % (r, g, b)
+    def rgb_to_hex(r: int, g: int, b: int, digit_cnt: int = 6) -> str:
+        six_digit_hex_color = '#%02x%02x%02x' % (r, g, b)
+        if digit_cnt == 6:
+            return six_digit_hex_color
+        else:
+            three_digit_hex_color = ''.join([six_digit_hex_color[i] for i in range(0, len(six_digit_hex_color), 2)])
+            return three_digit_hex_color
 
     @staticmethod
     def hex_to_rgb(h: str) -> tuple:
