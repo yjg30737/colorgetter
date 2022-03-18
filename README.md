@@ -8,7 +8,7 @@ Color getter (including method to get random color or complementary color) made 
 * ```get_random_color() -> tuple```
 * ```get_color_from_stylesheet(code: str) -> None```
 * ```get_complementary_color(r: int, g: int, b: int) -> tuple```
-* ```rgb_to_hex(r: int, g: int, b: int) -> str```
+* ```rgb_to_hex(r: int, g: int, b: int, digit_cnt: int = 6) -> str``` - Argument ```digit_cnt``` is digit count of hex color user want to get.  The value of ```digit_cnt``` should be 3 or 6. It is set to 6 by default.
 * ```hex_to_rgb(hex: str) -> tuple``` - Argument ```hex``` should be 3 or 6 digit hex colors like #DDD, #ABABAB.
 * ```lighter(r: int, g: int, b: int) -> tuple```
 * ```darker(r: int, g: int, b: int) -> tuple```
