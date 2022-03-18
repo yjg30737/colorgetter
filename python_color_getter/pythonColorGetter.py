@@ -30,7 +30,11 @@ class PythonColorGetter:
     @staticmethod
     def hex_to_rgb(h: str) -> tuple:
         h = h[1:]
-        return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
+
+        if len(h) == 3:
+            return tuple(int(h[i:i+2], 16) for i in (0, 1, 2))
+        else:
+            return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
 
     @staticmethod
     def lighter(r: int, g: int, b: int) -> tuple:
