@@ -1,8 +1,8 @@
 # python-color-getter
-Color getter (including method to get random color or complementary color) made out of Python
+Python color getter (including method to get random color or complementary color)
 
 ## Setup
-```pip3 install git+https://github.com/yjg30737/python-color-getter.git --upgrade```
+`python -m pip install python-color-getter`
 
 ## Method Overview
 * ```get_random_color() -> tuple```
