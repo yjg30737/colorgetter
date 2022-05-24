@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/python_color_getter.iml" filepath="$PROJECT_DIR$/.idea/python_color_getter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/colorgetter.iml" filepath="$PROJECT_DIR$/.idea/colorgetter.iml" />
     </modules>
   </component>
 </project>

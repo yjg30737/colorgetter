@@ -15,9 +15,10 @@ Python color getter (including method to get random color or complementary color
 
 ## Example
 Code Sample
+
 ```python
 print(PythonColorGetter.get_random_color())
-print(PythonColorGetter.get_complementary_color(255, 0, 0))
+print(PythonColorGetter.get_comp_color(255, 0, 0))
 print(PythonColorGetter.hex_to_rgb('#2c2c2c'))
 r, g, b = 44, 44, 44
 print(PythonColorGetter.rgb_to_hex(r, g, b))

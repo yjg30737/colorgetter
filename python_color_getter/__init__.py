@@ -1,1 +1,0 @@
-from .pythonColorGetter import PythonColorGetter
