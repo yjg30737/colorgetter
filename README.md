@@ -2,7 +2,7 @@
 Python color getter (being able to get random/complementary/lighter/darker color, convert between rgb/hex)
 
 ## Setup
-`python -m pip install python-color-getter`
+`python -m pip install colorgetter`
 
 ## Method Overview
 * `get_random_color() -> tuple`
