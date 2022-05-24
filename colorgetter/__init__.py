@@ -1,1 +1,1 @@
-from .colorgetter.main import *
+from colorgetter.main import *
